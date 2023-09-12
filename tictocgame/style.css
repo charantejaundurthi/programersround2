@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 50px;
+    margin-left:500px;
+    margin-right:400px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.cell.X {
+    background-color: orange; 
+    color: #fff;
+}
+
+.cell.O {
+    background-color: #28a745; 
+    color: #fff;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: hotpink;
+}
+
+.message {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.message.winner {
+    color: #28a745;
+}
+
+.message.draw {
+    color: #dc3545;
+}
